@@ -66,7 +66,7 @@
     // Если при введёный символ не соответствует ни одному значению из переменных убираем одну попытку.                   
                     } else {
                         numberOfAttempts--;
-                        alert("Unfortunetly, that letter is not exist " + wordGuessedLetters.join(" ") + " no, youe number of attempts = " + numberOfAttempts)
+                        alert("Unfortunetly, that letter is not exist " + wordGuessedLetters.join(" ") + " no, your number of attempts = " + numberOfAttempts)
                         break;
                     }
                 }
@@ -74,7 +74,7 @@
         }
     // Если слово отгадано выводим поздрравление!
     if (longWord == 0){
-        alert("You guessed everything " + "''" + word.length + "''" + " letters in a word " + wordGuessedLetters.join(" ") + " and you have more in stock " + numberOfAttempts + " attempts!");
+        alert("You guessed everything " + "''" + word.length + "''" + " letters in a word " + wordGuessedLetters.join(" ") + " and you have " + numberOfAttempts + " more attempts!");
         } 
     // Если слово неотгадано выводим попробуйте заново!
         else {alert("You have run out of attempts and the word is not guessed, try again")}     
