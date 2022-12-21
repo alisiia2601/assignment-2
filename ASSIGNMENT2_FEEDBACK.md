@@ -1,3 +1,20 @@
+Hi Alissia!  Updated 21-12-2022
+
+Nice! The only thing I'm concerned with is the use of the eval() function as I discussed in the previous feedback -
+
+"The eval() function runs the string that is passed to it, and in the case where the string is user entered data it is a security risk. As a result it is strongly recommended to NEVER use eval. In this case there's no security risk, but there is a better way to do what you are trying to do.
+
+  Arrays and string have an "includes" function - https://www.w3schools.com/jsref/jsref_includes_array.asp - that returns a boolean. So you should delete the for loop from line 15, then at line 62 change the if:
+
+  if (word.includes(guess))
+
+  You could also change line 49 - if ( guess === wordGuessedLetters[p]) to use an include and move it to outside the loop.
+
+  Using includes means you could restructure the entire while loop from line 47 - ie. first check if the user has already guessed the word else check if word includes guess"
+
+
+*************************************
+
 Hi Alissia!
 
 Nice work! The game works very well and as you will see in the comments below you have nearly ticked off all requirements. There are a few things I would like you to do.
@@ -32,15 +49,15 @@ Random selection from array: ✅
 
 Loops:
   For: ✅ ❌
-  The eval() functions runs the string that is passed to it, and in the case where the string is use entered data it is a security risk. As a result it is strongly recommended to NEVER use eval. In this case there's no security risk, but there is a better way to do what you are trying to do.
+  The eval() functions runs the string that is passed to it, and in the case where the string is user entered data it is a security risk. As a result it is strongly recommended to NEVER use eval. In this case there's no security risk, but there is a better way to do what you are trying to do.
 
   Arrays and string have an "includes" function - https://www.w3schools.com/jsref/jsref_includes_array.asp - that returns a boolean. So you should delete the for loop from line 15, then at line 62 change the if:
 
   if (word.includes(guess))
 
-  You could also cange line 49 - if ( guess === wordGuessedLetters[p]) to use an include and move it to outside the loop.
+  You could also change line 49 - if ( guess === wordGuessedLetters[p]) to use an include and move it to outside the loop.
 
-  Using included means you couldd restructure the entire while loop from line 47 - ie.e first check if the user has already guessed the word else chck if word includes guess
+  Using includes means you could restructure the entire while loop from line 47 - ie. first check if the user has already guessed the word else check if word includes guess
 
   Line 61 - for (let c = 0; c < 1; c++) 
   That will only run once so doesn't need to be loop and doesnt need the breaks.
