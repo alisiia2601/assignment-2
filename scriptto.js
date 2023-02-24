@@ -11,17 +11,7 @@ let crossedOutLettersInAWord = [];
         crossedOutLettersInAWord[i] = " _ ";
     }
 
-    for (let g = 0; g < word.length; g++){
-        eval("let id_"+g+"="+g);
-        id_0 = word[0];
-        id_1 = word[1];
-        id_2 = word[2];
-        id_3 = word[3];
-        id_4 = word[4];
-        id_5 = word[5];
-        id_6 = word[6];
-        id_7 = word[7];
-    }
+    
 
 let longWord = word.length;
 
@@ -58,7 +48,7 @@ alert("The word contains of" + "''" + longWord + "''" + " letters " + crossedOut
             }
 
             for (let c = 0; c < 1; c++) {
-                 if (id_0 === guess || id_1 === guess || id_2 === guess || id_3 === guess || id_4 === guess || id_5 === guess || id_6 === guess || id_7 === guess){
+                if (word.includes(guess)){
                     alert("You've got a right letter!!! " + wordGuessedLetters.join(" ") + " the number of your attempts = " + numberOfAttempts)
                     break;
 
