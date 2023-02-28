@@ -1,5 +1,13 @@
 Hi Alissia!  Updated 21-12-2022
 
+Updated 23-2-2023
+
+---------------------------------------
+
+Perfect! Välgodkänt!
+
+---------------------------------------
+
 Nice! The only thing I'm concerned with is the use of the eval() function as I discussed in the previous feedback -
 
 "The eval() function runs the string that is passed to it, and in the case where the string is user entered data it is a security risk. As a result it is strongly recommended to NEVER use eval. In this case there's no security risk, but there is a better way to do what you are trying to do.
@@ -27,7 +35,7 @@ The only other major thing is using "eval()". I've detailed why below and sugges
 
 Because the game works well, and your logic is fine, you have a Godkänt grade already, congratulations! However, if you move the code to an external file and remove the eval and use includes you'll have achieved a VG grade.
 
-It's your choice - if you are happy with th G grade you can leave it as it is. If you want the VG grade please fix these tings and re-submit.
+It's your choice - if you are happy with the G grade you can leave it as it is. If you want the VG grade please fix these tings and re-submit.
 
 Could you please let me know what you would like to do?
 
